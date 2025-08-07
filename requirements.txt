@@ -1,5 +1,6 @@
 flask
-llama-index==0.13.11
+llama-index-core==0.13.0
+llama-index-embeddings-huggingface 
 sentence-transformers
 pinecone-client
 gunicorn
