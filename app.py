@@ -11,7 +11,11 @@ import faiss
 load_dotenv()
 
 # === Configuration ===
-DATA_DIR = "C:/Users/Admin/ancient_greece_chatbot/data/ancient_greece_data"
+# Get the absolute path to the current file's directory
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+
+# Create the full path to your data folder
+DATA_DIR = os.path.join(BASE_DIR, "data", "ancient_greece_data")
 EMBED_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 EMBED_DIM = 384
 SIMILARITY_THRESHOLD = 0.5  # Lowered to allow slightly looser matches
