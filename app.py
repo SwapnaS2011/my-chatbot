@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from llama_index.core import VectorStoreIndex, SimpleDirectoryReade
+from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.core.settings import Settings
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.vector_stores.faiss import FaissVectorStore
